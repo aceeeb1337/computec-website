@@ -327,7 +327,7 @@ footer{border-top:1px solid var(--border);padding:28px 5%;display:flex;align-ite
         <button class="mc" onclick="closeModal()">✕</button>
       </div>
       <div class="mb">
-        <div class="w3n" id="w3n">⚠ <strong>Setup needed:</strong> Replace <code>YOUR_KEY_HERE</code> with your free <a href="https://web3forms.com" target="_blank" style="color:var(--yellow)">Web3Forms key</a> so orders reach your email.</div>
+        <div class="w3n" id="w3n">⚠ <strong>Setup needed:</strong> Replace <code>f95091b5-b553-4117-8663-15f3b0ab92b3</code> with your free <a href="https://web3forms.com" target="_blank" style="color:var(--yellow)">Web3Forms key</a> so orders reach your email.</div>
         <div class="sp">
           <div id="mico" style="font-size:22px">🛒</div>
           <div><div class="spn" id="mname">Select a product below</div><div class="spp" id="mprice"></div></div>
@@ -519,7 +519,7 @@ function openModal(pid) {
   document.getElementById('fw').style.display = '';
   document.getElementById('okb').classList.remove('show');
   const key = document.querySelector('[name="access_key"]').value;
-  document.getElementById('w3n').style.display = (!key || key === 'YOUR_KEY_HERE') ? 'block' : 'none';
+  document.getElementById('w3n').style.display = (!key || key === 'f95091b5-b553-4117-8663-15f3b0ab92b3') ? 'block' : 'none';
   if (pid) { const p = products.find(x => x.id === pid); if (p) setProd(p); }
 }
 function closeModal() { document.getElementById('ov').classList.remove('open'); document.body.style.overflow = ''; }
